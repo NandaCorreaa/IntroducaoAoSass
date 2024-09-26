@@ -24,5 +24,5 @@ Neste projeto, os alunos aprenderão:
 3. **Seletor de ID e Classe**: Diferenciação entre estilos aplicados a elementos únicos (ID) e estilos reutilizáveis (classe).
 4. **Aninhamento de Seletores (Nesting)**: Como agrupar seletores relacionados de maneira hierárquica para um código mais limpo e organizado.
 
-## 👩‍🏫 Autor
+## 👩‍🏫 Autora
 Projeto criado por Fernanda Corrêa, Instrutora Técnica da Vai Na Web, com o objetivo de ensinar e guiar os alunos no processo de aprendizagem de SASS.
