@@ -1,0 +1,103 @@
+/*  Anatomia do Sass 
+
+seletor
+declaração (abertura e fechamento das {  }  )
+propriedades
+valor da propriedade
+_______________________________
+
+seletor {
+  propriedade: valor ;
+}
+
+*/
+
+// Seletor global (* {}) - aplica estilos a todos os elementos da página.
+* {
+    background-color: pink;
+  }
+  
+  // Seletor por elemento / tag h1, p, body, div
+  // O seletor por elemento estiliza todos os elementos de um tipo específico no HTML.
+  // Por exemplo, p { color: green; } aplicará a cor verde a todos os elementos <p> na página.
+  header {
+    border: solid 2px red;
+
+    h1 {
+      color: darkmagenta;
+    }
+  }
+  
+  // O seletor de ID (#) estiliza um único elemento HTML que possui um ID específico.
+  // IDs devem ser únicos em uma página e são usados para aplicar estilos ou manipular elementos.
+  // Por exemplo, #meu-id { background-color: red; } aplicará o fundo vermelho ao elemento com o ID "meu-id".
+  #tituloMain {
+    color: blue;
+  }
+  
+  // Seletor de Classe .paragrafo .div1
+  // O seletor de classe (.) estiliza elementos HTML que possuem uma classe específica.
+  // Ele permite aplicar estilos a múltiplos elementos que compartilham a mesma classe.
+  // Por exemplo, .minha-classe { color: blue; } aplicará a cor azul a todos os elementos com a classe "minha-classe".
+  
+  .primeiraSessao {
+    background-color: darkmagenta;
+    height: 150px;
+  
+    .div1 {
+      background-color: red;
+    }
+  
+    .div2 {
+      background-color: green;
+    }
+    .div3 {
+      background-color: crimson;
+    }
+  }
+
+  .tituloVerde {
+    color: green;
+  }
+
+  // Nesting / Aninhamento
+  // O aninhamento permite agrupar os estilos de forma hierárquica, facilitando o mapeamento da estrutura do HTML para o CSS.
+  // Neste exemplo, a tag <article> estiliza um contêiner com altura, largura e cor de fundo.
+  // Dentro dela, há um <figure>, que tem uma borda e largura definidas.
+  // A imagem dentro de <figure> herda a largura do contêiner pai.
+  // O elemento pai contém e influencia os filhos. No exemplo, <article> é o pai de <figure>, que por sua vez é pai de <img> e <figcaption>.
+  // O <figcaption> recebe uma cor de texto específica, mantendo uma organização clara e legível para os elementos aninhados.
+  article {
+    background-color: dodgerblue;
+    height: 200px;
+    width: 500px;
+
+    figure {
+        border: solid 3px indigo;
+        width: 200px;
+
+        img {
+            width: 200px;
+        }
+
+        figcaption {
+            color: indigo;
+        }
+    }
+}
+  
+  footer {
+    border: solid 2px red;
+  }
+  
+  /*
+Os seletores são atribuídos pesos baseados na seguinte estrutura:
+
+ID: Cada ID conta como 100.
+Classe, pseudo-classe, e atributo: Cada um conta como 10.
+Elemento e pseudo-elemento: Cada um conta como 1.
+Seletor global (*): Não conta para a especificidade, seu peso é 0.
+
+Isso se refere ao cálculo de especificidade em CSS, que determina quais estilos serão aplicados quando múltiplas regras se aplicam ao mesmo elemento. A especificidade é como uma pontuação atribuída aos seletores para definir qual regra tem mais "peso" ou prioridade.
+Esse sistema ajuda o navegador a resolver conflitos entre várias regras que possam se aplicar ao mesmo elemento.
+  */

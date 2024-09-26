@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*  Anatomia do Sass 
+
+seletor
+declaração (abertura e fechamento das {  }  )
+propriedades
+valor da propriedade
+_______________________________
+
+seletor {
+  propriedade: valor ;
+}
+
+*/
+* {
+  background-color: pink;
+}
+
+header {
+  border: solid 2px red;
+}
+header h1 {
+  color: darkmagenta;
+}
+
+#tituloMain {
+  color: blue;
+}
+
+.primeiraSessao {
+  background-color: darkmagenta;
+  height: 150px;
+}
+.primeiraSessao .div1 {
+  background-color: red;
+}
+.primeiraSessao .div2 {
+  background-color: green;
+}
+.primeiraSessao .div3 {
+  background-color: crimson;
+}
+
+.tituloVerde {
+  color: green;
+}
+
+article {
+  background-color: dodgerblue;
+  height: 200px;
+  width: 500px;
+}
+article figure {
+  border: solid 3px indigo;
+  width: 200px;
+}
+article figure img {
+  width: 200px;
+}
+article figure figcaption {
+  color: indigo;
+}
+
+footer {
+  border: solid 2px red;
+}
+
+/*
+Os seletores são atribuídos pesos baseados na seguinte estrutura:
+
+ID: Cada ID conta como 100.
+Classe, pseudo-classe, e atributo: Cada um conta como 10.
+Elemento e pseudo-elemento: Cada um conta como 1.
+Seletor global (*): Não conta para a especificidade, seu peso é 0.
+
+Isso se refere ao cálculo de especificidade em CSS, que determina quais estilos serão aplicados quando múltiplas regras se aplicam ao mesmo elemento. A especificidade é como uma pontuação atribuída aos seletores para definir qual regra tem mais "peso" ou prioridade.
+Esse sistema ajuda o navegador a resolver conflitos entre várias regras que possam se aplicar ao mesmo elemento.
+  *//*# sourceMappingURL=style.css.map */
